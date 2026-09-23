@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@theme {
+  --color-gray-950: #030712;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-gray-950 text-gray-100;
+    font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+  }
+
+  *:focus-visible {
+    outline: 2px solid theme(colors.violet.500);
+    outline-offset: 2px;
+  }
+
+  /* Custom scrollbars */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: theme(colors.gray.700);
+    border-radius: 9999px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: theme(colors.gray.600);
+  }
+}
+
+/* Textarea line height sync */
+textarea {
+  line-height: 1.25rem;
+}
