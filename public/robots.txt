@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dev-toolkit.ffrclup.workers.dev/sitemap.xml

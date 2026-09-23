@@ -1,24 +1,29 @@
-# 🛠️ BUILT BY RAFI — DevToolkit
+# 🛠️ DevToolkit — Privacy-First Developer Power Suite
 
-> An ultra-modern, **100% client-side, privacy-first** developer power suite.  
-> Engineered for daily developer workflows. All processing happens entirely within your browser — **zero tracking, zero server calls, zero telemetry**.
+> An ultra-modern, **100% client-side, open-source** developer toolkit and utility suite built for software engineers, web developers, and architects.  
+> Format JSON, decode JWTs, convert Base64, generate UUIDs, calculate Hashes & HMACs, and test Regular Expressions — **zero tracking, zero server calls, zero data retention**.
 
 <p align="center">
-  <img src="./public/logo.png" alt="Built By Rafi Logo" width="130" style="border-radius: 20px; box-shadow: 0 0 25px rgba(6,182,212,0.4);" />
+  <img src="./public/logo.png" alt="DevToolkit Logo by built-by-rafi" width="130" style="border-radius: 20px; box-shadow: 0 0 25px rgba(6,182,212,0.4);" />
 </p>
 
 <p align="center">
   <a href="https://dev-toolkit.ffrclup.workers.dev/">
-    <img src="https://img.shields.io/badge/🚀_Live_Demo-dev--toolkit.ffrclup.workers.dev-7c3aed?style=for-the-badge" alt="Live Demo" />
+    <img src="https://img.shields.io/badge/🚀_Live_App-dev--toolkit.ffrclup.workers.dev-7c3aed?style=for-the-badge" alt="Live Web App" />
   </a>
 </p>
 
 <p align="center">
+  <a href="https://github.com/built-by-rafi"><img src="https://img.shields.io/badge/Author-built--by--rafi-06b6d4.svg?style=flat-square&logo=github" alt="Author built-by-rafi" /></a>
   <a href="./LICENSE"><img src="https://img.shields.io/badge/License-MIT-violet.svg?style=flat-square" alt="License: MIT" /></a>
-  <a href="https://vite.dev"><img src="https://img.shields.io/badge/Built%20with-Vite-646cff.svg?style=flat-square" alt="Built with Vite" /></a>
-  <a href="https://tailwindcss.com"><img src="https://img.shields.io/badge/Tailwind%20CSS-v4-06b6d4.svg?style=flat-square" alt="Tailwind CSS" /></a>
-  <a href="https://react.dev"><img src="https://img.shields.io/badge/React-18-61dafb.svg?style=flat-square" alt="React 18" /></a>
-  <a href="https://dev-toolkit.ffrclup.workers.dev/"><img src="https://img.shields.io/badge/Deployment-Cloudflare-emerald.svg?style=flat-square" alt="Cloudflare Deployment" /></a>
+  <a href="https://vite.dev"><img src="https://img.shields.io/badge/Built%20with-Vite-646cff.svg?style=flat-square&logo=vite" alt="Built with Vite" /></a>
+  <a href="https://tailwindcss.com"><img src="https://img.shields.io/badge/Tailwind%20CSS-v4-06b6d4.svg?style=flat-square&logo=tailwindcss" alt="Tailwind CSS" /></a>
+  <a href="https://react.dev"><img src="https://img.shields.io/badge/React-18-61dafb.svg?style=flat-square&logo=react" alt="React 18" /></a>
+  <a href="https://dev-toolkit.ffrclup.workers.dev/"><img src="https://img.shields.io/badge/Cloudflare-Deployed-emerald.svg?style=flat-square&logo=cloudflare" alt="Cloudflare Deployment" /></a>
+</p>
+
+<p align="center">
+  <code>developer-tools</code> • <code>json-formatter</code> • <code>jwt-decoder</code> • <code>base64-encoder</code> • <code>uuid-generator</code> • <code>regex-tester</code> • <code>hash-calculator</code> • <code>privacy-first</code>
 </p>
 
 ---
@@ -127,6 +132,15 @@ Contributions are welcome! Please read [CONTRIBUTING.md](./CONTRIBUTING.md) for 
 
 ---
 
+## 👤 Author & Maintainer
+
+**Rafi**
+- **GitHub**: [@built-by-rafi](https://github.com/built-by-rafi)
+- **Portfolio / Live Project**: [DevToolkit — dev-toolkit.ffrclup.workers.dev](https://dev-toolkit.ffrclup.workers.dev/)
+- **Repository**: [built-by-rafi/dev-toolkit](https://github.com/built-by-rafi/dev-toolkit)
+
+---
+
 ## 📄 License
 
-MIT © 2024 DevToolkit — Engineered with 💜 by **Rafi**. See [LICENSE](./LICENSE) for details.
+MIT © 2024 DevToolkit — Engineered with 💜 by [**Rafi**](https://github.com/built-by-rafi). See [LICENSE](./LICENSE) for details.
