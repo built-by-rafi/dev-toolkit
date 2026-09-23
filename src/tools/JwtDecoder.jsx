@@ -1,5 +1,5 @@
-import { useState, useCallback, useEffect } from "react";
-import { CopyIcon, CheckIcon, TrashIcon, AlertCircleIcon, LockIcon, SparklesIcon, ShieldCheckIcon } from "../components/Icons";
+import { useState, useCallback } from "react";
+import { CopyIcon, CheckIcon, TrashIcon, AlertCircleIcon, SparklesIcon, ShieldCheckIcon } from "../components/Icons";
 
 function base64UrlDecode(str) {
   str = str.replace(/-/g, "+").replace(/_/g, "/");
@@ -63,10 +63,11 @@ const SAMPLE_JWT = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1c2VyXzEyMzQ
 
 export default function JwtDecoder() {
   const [token, setToken] = useState(SAMPLE_JWT);
-  const [decoded, setDecoded] = useState(null);
+  const [decoded, setDecoded] = useState(() => decodeJWT(SAMPLE_JWT));
   const [error, setError] = useState(null);
   const [secretKey, setSecretKey] = useState("your-256-bit-secret");
   const [sigStatus, setSigStatus] = useState(null); // 'valid' | 'invalid' | null
+  const [nowTimestamp] = useState(() => Date.now() / 1000);
   const [copiedToken, copyToken] = useCopy(`Authorization: Bearer ${token}`);
 
   const decode = (val) => {
@@ -82,10 +83,6 @@ export default function JwtDecoder() {
       setError(null);
     }
   };
-
-  useEffect(() => {
-    decode(SAMPLE_JWT);
-  }, []);
 
   // Client-side HS256 verification via Web Crypto API
   const verifySignature = async () => {
@@ -117,12 +114,12 @@ export default function JwtDecoder() {
       } else {
         setSigStatus("invalid");
       }
-    } catch (e) {
+    } catch {
       setSigStatus("invalid");
     }
   };
 
-  const isExpired = decoded?.payload?.exp && Date.now() / 1000 > decoded.payload.exp;
+  const isExpired = decoded?.payload?.exp && nowTimestamp > decoded.payload.exp;
   const expiryNote = decoded?.payload?.exp ? getExpiryRelative(decoded.payload.exp) : null;
 
   return (

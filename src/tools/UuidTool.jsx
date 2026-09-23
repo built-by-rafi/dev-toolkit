@@ -31,7 +31,7 @@ export default function UuidTool() {
   const [braces, setBraces] = useState(false);
   const [generatedList, setGeneratedList] = useState([]);
 
-  const generateSingle = () => {
+  const generateSingle = useCallback(() => {
     let raw = "";
     if (type === "nanoid") {
       raw = generateNanoId(21);
@@ -56,19 +56,19 @@ export default function UuidTool() {
     }
 
     return raw;
-  };
+  }, [type, hyphens, uppercase, braces]);
 
-  const regenerate = () => {
+  const regenerate = useCallback(() => {
     const list = Array.from({ length: count }, () => ({
       id: Math.random().toString(),
       value: generateSingle()
     }));
     setGeneratedList(list);
-  };
+  }, [count, generateSingle]);
 
   useEffect(() => {
     regenerate();
-  }, [type, count, uppercase, hyphens, braces]);
+  }, [regenerate]);
 
   const allAsText = generatedList.map((item) => item.value).join("\n");
   const allAsJson = JSON.stringify(generatedList.map((item) => item.value), null, 2);

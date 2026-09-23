@@ -1,5 +1,5 @@
 import { useState, useCallback } from "react";
-import { CopyIcon, CheckIcon, TrashIcon, AlertCircleIcon, ArrowRightIcon, FileImageIcon, UploadIcon } from "../components/Icons";
+import { CopyIcon, CheckIcon, TrashIcon, AlertCircleIcon, FileImageIcon, UploadIcon } from "../components/Icons";
 
 function encode(input, mode) {
   try {

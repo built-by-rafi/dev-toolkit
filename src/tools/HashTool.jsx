@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback } from "react";
-import { CopyIcon, CheckIcon, TrashIcon, ShieldCheckIcon, SparklesIcon } from "../components/Icons";
+import { CopyIcon, CheckIcon, TrashIcon } from "../components/Icons";
 
 function useCopy(text) {
   const [copied, setCopied] = useState(false);
